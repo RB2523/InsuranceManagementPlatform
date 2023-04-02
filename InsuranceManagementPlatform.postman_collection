@@ -1,0 +1,582 @@
+{
+	"info": {
+		"_postman_id": "19ba8fa4-3379-49b8-9e0f-1cf6d022173c",
+		"name": "client claim policy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all clients",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "ram",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "ram",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/clients",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get client by id",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "ram",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "ram",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/clients/0957efb8-f4f2-4658-a4a2-9ba009959bbe",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clients",
+						"0957efb8-f4f2-4658-a4a2-9ba009959bbe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save new client",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "ram",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "ram",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Ram\",\r\n    \"dob\": \"1 june 2021\",\r\n    \"contactNo\":\"2344234535\",\r\n        \"city\" : \"Noida\",\r\n        \"state\":\"Delhi\",\r\n        \"country\": \"India\",\r\n        \"pincode\" : \"232322\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/clients",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update client",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "ram",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "ram",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Shyam\",\r\n    \"dob\": \"1 jan 2021\",\r\n    \"contactNo\":\"4443454444\",\r\n        \"city\" : \"asdd\",\r\n        \"state\":\"Deasdasdlhi\",\r\n        \"country\": \"sadas\",\r\n        \"pincode\" : \"345345\"\r\n\r\n\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/clients/0957efb8-f4f2-4658-a4a2-9ba009959bbe",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clients",
+						"0957efb8-f4f2-4658-a4a2-9ba009959bbe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete client",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "ram",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "ram",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/clients/0957efb8-f4f2-4658-a4a2-9ba009959bbe",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clients",
+						"0957efb8-f4f2-4658-a4a2-9ba009959bbe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all policies",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "ram",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "ram",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/policies",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"policies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get policy with id",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "ram",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "ram",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/policies/28fff67c-f115-451e-9b25-c7b7bad858a0",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"policies",
+						"28fff67c-f115-451e-9b25-c7b7bad858a0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save new policy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "ram",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "ram",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"policyNumber\":\"222\",\r\n    \"policyType\":\"policyType1 \",\r\n    \"policyCoverageAmount\":10000,\r\n    \"policyPremium\":1000000,\r\n    \"policyStartDate\":\"1 jan 2022\",\r\n    \"policyEndDate\" :\"1 Jan 2025\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/policies",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"policies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update policy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "ram",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "ram",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"policyNumber\":\"4444\",\r\n    \"policyType\":\"policyType1\",\r\n    \"policyCoverageAmount\":10000,\r\n    \"policyPremium\":1000000,\r\n    \"policyStartDate\":\"1 jan 2022\",\r\n    \"policyEndDate\" :\"1 Jan 2025\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/policies/28fff67c-f115-451e-9b25-c7b7bad858a0",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"policies",
+						"28fff67c-f115-451e-9b25-c7b7bad858a0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete policy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "ram",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "ram",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/policies/0aba90ec-e13a-443c-8ff3-5488f7e33157",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"policies",
+						"0aba90ec-e13a-443c-8ff3-5488f7e33157"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all claims",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "ram",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "ram",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/claims",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"claims"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get claim by id",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "ram",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "ram",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/claims/22a0fefe-d8f1-4355-9812-614096ee455d",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"claims",
+						"22a0fefe-d8f1-4355-9812-614096ee455d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save new claim",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "ram",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "ram",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"claimNumber\":\"1234\",\r\n    \"claimDate\": \"1 june 2021\",\r\n    \"claimStatus\":\"Pending\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/claims",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"claims"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update claim",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "ram",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "ram",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"claimNumber\":\"4444\",\r\n    \"claimDate\": \"1 june 2021\",\r\n    \"claimStatus\":\"Pending\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/claims/22a0fefe-d8f1-4355-9812-614096ee455d",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"claims",
+						"22a0fefe-d8f1-4355-9812-614096ee455d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete claim",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "ram",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "ram",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/claims/22a0fefe-d8f1-4355-9812-614096ee455d",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"claims",
+						"22a0fefe-d8f1-4355-9812-614096ee455d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
